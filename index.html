@@ -19,6 +19,7 @@
                     <span @click="cancelItem(item)" :class="item.done === true ? 'text-line' : ''">
                         {{item.text}}
                     </span>
+                    <i @click="deleteItem(index)">&cross;</i>
                 </li>
             </ul>
         </div>

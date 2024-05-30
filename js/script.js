@@ -27,5 +27,8 @@ createApp({
         cancelItem: function (itemIndex) {
             itemIndex.done = !itemIndex.done;
         },
+        deleteItem: function(itemIndex) {
+            this.tooDoList.splice(itemIndex, 1);
+        }
     }
 }).mount('#app')
