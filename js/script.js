@@ -31,12 +31,16 @@ createApp({
         deleteItem: function(itemIndex) {
             this.tooDoList.splice(itemIndex, 1);
         },
-        addNewItem: function (item) {
+        addNewItem: function () {
             const array = {
-                text: item,
+                text: this.newItem,
                 done: false,
             };
             this.tooDoList.push(array);
+            this.clearItem();
+        },
+        clearItem: function () {
+            this.newItem = "";
         }
     }
 }).mount('#app')

@@ -22,8 +22,8 @@
                     <i @click="deleteItem(index)">&cross;</i>
                 </li>
             </ul>
-            <input type="text" v-model="newItem" @keyup.enter="addNewItem(newItem)">
-            <button @click="addNewItem(newItem)">Add to List</button>
+            <input type="text" v-model="newItem" @keyup.enter="addNewItem()">
+            <button @click="addNewItem()">Add to List</button>
         </div>
     </main>
 
