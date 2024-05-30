@@ -41,6 +41,10 @@ createApp({
         },
         clearItem: function () {
             this.newItem = "";
+        },
+        editItem: function (itemIndex) {
+            const newInputText = prompt(`Change your item: ${this.tooDoList[itemIndex].text}`);
+            this.tooDoList[itemIndex].text = newInputText;
         }
     }
 }).mount('#app')

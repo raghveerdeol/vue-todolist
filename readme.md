@@ -29,7 +29,11 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 -creo una funzione cleanNewItem per svuotare newitem;
 -richiamo la funione cleanNewItem in addItem;
 -richiamo la funzine addItem nel iput @keyup.enter="addItem()" e nel button con @cick;  
-
+<!-- 
 Bonus:
-1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
-2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
+1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa) -->
+
+
+<!-- 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente -->
+-per modificare un item già esistente creiamo un icona a cui aggiungiamo al click il metodo editItem;
+- nella funzione s

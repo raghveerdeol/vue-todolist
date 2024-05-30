@@ -21,7 +21,10 @@
                         <span @click="cancelItem(item)" :class="item.done === true ? 'text-line' : ''">
                             {{item.text}}
                         </span>
-                        <i class="fa-solid fa-delete-left" @click="deleteItem(index)"></i>
+                        <div class="icons">
+                            <i class="fa-solid fa-pen-to-square" @click="editItem(index)"></i>
+                            <i class="fa-solid fa-delete-left" @click="deleteItem(index)"></i>
+                        </div>
                     </li>
                 </ul>
                 <div>
