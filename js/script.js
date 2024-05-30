@@ -22,5 +22,10 @@ createApp({
                 },
             ]
         }
+    },
+    methods: {
+        cancelItem: function (itemIndex) {
+            itemIndex.done = !itemIndex.done;
+        },
     }
 }).mount('#app')
