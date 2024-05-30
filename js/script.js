@@ -20,7 +20,8 @@ createApp({
                     text: "Pizza",
                     done: false,
                 },
-            ]
+            ],
+            newItem: '',
         }
     },
     methods: {
@@ -29,6 +30,13 @@ createApp({
         },
         deleteItem: function(itemIndex) {
             this.tooDoList.splice(itemIndex, 1);
+        },
+        addNewItem: function (item) {
+            const array = {
+                text: item,
+                done: false,
+            };
+            this.tooDoList.push(array);
         }
     }
 }).mount('#app')
