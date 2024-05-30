@@ -14,16 +14,20 @@
 
     <main>
         <div id="app">
-            <ul>
-                <li v-for="(item, index) in tooDoList" key="index">
-                    <span @click="cancelItem(item)" :class="item.done === true ? 'text-line' : ''">
-                        {{item.text}}
-                    </span>
-                    <i @click="deleteItem(index)">&cross;</i>
-                </li>
-            </ul>
-            <input type="text" v-model="newItem" @keyup.enter="addNewItem()">
-            <button @click="addNewItem()">Add to List</button>
+            <div class="container">
+                <ul>
+                    <li v-for="(item, index) in tooDoList" key="index">
+                        <span @click="cancelItem(item)" :class="item.done === true ? 'text-line' : ''">
+                            {{item.text}}
+                        </span>
+                        <i @click="deleteItem(index)">&cross;</i>
+                    </li>
+                </ul>
+                <div>
+                    <input type="text" v-model="newItem" @keyup.enter="addNewItem()">
+                    <button @click="addNewItem()">Add to List</button>
+                </div>
+            </div>
         </div>
     </main>
 
